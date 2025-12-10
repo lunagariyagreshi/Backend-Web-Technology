@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <script>
+        n1 = parseFloat(prompt("Enter value1 "));
+        n2 = parseFloat(prompt("Enter value2 "));
+        op = prompt("Enter the operation you want:- ");
+
+        switch(op){
+            case '+' : res = n1+n2; break;
+            case '-' : res = n1-n2; break;
+            case '*' : res = n1*n2; break;
+            case '/' : res = n2 === 0 ? "Divide by zero": n1/n2; break;
+            case '%' : res = n1%n2; break;
+        }
+        alert("Ans = "+res);
+    </script>
+    
+</body>
+</html>

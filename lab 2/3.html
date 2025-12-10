@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    <script>
+        document.write("Default value of a = 10<br/>");
+        document.write("Default value of b = 20<hr/>");
+
+        document.write("Parameter passed :- ");
+        function defaultParameter(a=10,b=20){
+            document.write("<br/>a = ",a);
+            document.write("<br/>b = ",b);
+        }
+        defaultParameter(15,25);
+
+        document.write("<hr/>Parameter not passed :- ");
+        function defaultParameter2(a=10,b=20){
+            document.write("<br/>a = ",a);
+            document.write("<br/>b = ",b);
+        }
+        defaultParameter2();
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    <script>
+
+        var a = 10;
+        let b=10;
+        document.write("Out of loop a :- ",a);
+        document.write("<br/>Out of loop b :- ",b);
+
+        function outer(){
+
+           var a = 20;
+           let b = 20;
+            document.write("<hr/><br/>Outer loop a :- ",a);
+            document.write("<br/>Outer loop b:- ",b);
+
+            inner();
+            function inner(){
+               var a = 30;
+               b=30;
+               document.write("<hr/><br/>Inner loop a:- ",a);
+               document.write("<br/>Inner loop :- ",b);
+            }
+        }
+        outer();
+        
+    </script>
+</body>
+</html>
